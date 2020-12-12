@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <p>Введите натуральное число N</p>
-      <input type="number" onChange={onChange} value={number} />
+      <input type="number" placeholder="N" onChange={onChange} value={number} />
       <button onClick={() => getResult(number)}>Получить все натуральные числа меньше N и взаимно простые с ним</button>
       {result && <span>{result}</span>}
     </div>
